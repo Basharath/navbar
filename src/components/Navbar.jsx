@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 
 export default function Navbar() {
@@ -12,9 +13,9 @@ export default function Navbar() {
     <div className="navbar-container">
       <div className="navbar">
         <div className="brand-container">
-          <a href="/" className="nav-brand">
+          <Link to="/" className="nav-brand">
             Brand Name
-          </a>
+          </Link>
           <div className="nav-toggler" onClick={handleNavToggle}>
             <i className={"fas " + (toggle ? "fa-times" : "fa-bars")}></i>
           </div>
@@ -22,29 +23,29 @@ export default function Navbar() {
         <div className={"nav-collapse" + (toggle ? " show" : "")}>
           <div className="navbar-list">
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <NavLink to="/" className="nav-link">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a href="/services" className="nav-link">
+              <NavLink to="/services" className="nav-link">
                 Services
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a href="/about" className="nav-link">
+              <NavLink to="/about" className="nav-link">
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a href="/blog" className="nav-link">
+              <NavLink to="/blog" className="nav-link">
                 Blog
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a href="/contact" className="nav-link">
+              <NavLink to="/contact" className="nav-link">
                 Contact
-              </a>
+              </NavLink>
             </li>
           </div>
           <div className="navbar-social">

@@ -10,6 +10,12 @@ body {
   font-family: "Poppins";
 }
 
+.container {
+  margin: 150px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
