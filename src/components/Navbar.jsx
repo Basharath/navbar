@@ -17,7 +17,11 @@ export default function Navbar() {
             Brand Name
           </Link>
           <div className="nav-toggler" onClick={handleNavToggle}>
-            <i className={"fas " + (toggle ? "fa-times" : "fa-bars")}></i>
+            {toggle ? (
+              <i className="fas fa-times"></i>
+            ) : (
+              <i className="fas fa-bars"></i>
+            )}
           </div>
         </div>
         <div className={"nav-collapse" + (toggle ? " show" : "")}>
